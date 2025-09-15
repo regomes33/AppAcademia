@@ -1,6 +1,7 @@
 export interface Exercise {
   name: string;
   details: string;
+  gifUrl?: string;
 }
 
 export interface SplitDetails {
@@ -63,9 +64,9 @@ export const workoutPlans: WorkoutPlan[] = [
       d: {
         title: "Costas / bíceps / abdominais",
         exercises: [
-          { name: "Puxada nuca na polia", details: "5 séries com 12, 10, 8, 8 e 6 repetições." },
-          { name: "Remada cavalinho", details: "4 séries com 10, 8, 8 e 6 repetições." },
-          { name: "Pulley frente", details: "4 séries com 10, 8, 8 e 6 repetições." },
+          { name: "Puxada nuca na polia", details: "5 séries com 12, 10, 8, 8 e 6 repetições.", gifUrl: "/gifs/imgi_21_costas-puxada-aberta-com-barra-no-pulley-1.gif" },
+          { name: "Remada cavalinho", details: "4 séries com 10, 8, 8 e 6 repetições.", gifUrl: "/gifs/imgi_9_costas-remada-curvada-.gif" },
+          { name: "Pulley frente", details: "4 séries com 10, 8, 8 e 6 repetições.", gifUrl: "/gifs/imgi_20_costas-puxada-para-frente-no-pulley-com-triangulo.gif" },
           { name: "Levantamento terra", details: "3 séries de 10 repetições." },
           { name: "Rosca direta com barra reta", details: "4 séries com 12, 10, 10 e 8 repetições." },
           { name: "Rosca martelo sentado alternado", details: "3 séries de 10 repetições." },
@@ -95,9 +96,9 @@ export const workoutPlans: WorkoutPlan[] = [
       b: {
         title: "Costas / antebraços / posteriores",
         exercises: [
-          { name: "Puxada costas no pulley", details: "4 séries de 10 repetições." },
-          { name: "Puxada frontal no pulley", details: "4 séries de 10 repetições." },
-          { name: "Remada", details: "4 séries de 10 repetições." },
+          { name: "Puxada costas no pulley", details: "4 séries de 10 repetições.", gifUrl: "/gifs/imgi_22_costas-puxada-com-barra-no-pulley-1.gif" },
+          { name: "Puxada frontal no pulley", details: "4 séries de 10 repetições.", gifUrl: "/gifs/imgi_20_costas-puxada-para-frente-no-pulley-com-triangulo.gif" },
+          { name: "Remada", details: "4 séries de 10 repetições.", gifUrl: "/gifs/imgi_10_costas-remada-curvada-.gif" },
           { name: "Peck Deck invertido (na máquina de voador)", details: "4 séries de 12 repetições." },
           { name: "Asa", details: "4 séries de 10 repetições." },
           { name: "Antebraço com halter", details: "4 séries de 15 repetições." },
@@ -157,10 +158,10 @@ export const workoutPlans: WorkoutPlan[] = [
         title: "Costas / bíceps / antebraços",
         exercises: [
           { name: "Levantamento terra", details: "3 séries de 10 a 12 repetições." },
-          { name: "Pulley frontal", details: "3 séries de 10 a 12 repetições." },
-          { name: "Pulley atrás", details: "4 séries de 10 a 12 repetições." },
-          { name: "Remada baixa", details: "4 séries de 10 a 12 repetições." },
-          { name: "Serrote com halter", details: "4 séries de 10 a 12 repetições." },
+          { name: "Pulley frontal", details: "3 séries de 10 a 12 repetições.", gifUrl: "/gifs/imgi_20_costas-puxada-para-frente-no-pulley-com-triangulo.gif" },
+          { name: "Pulley atrás", details: "4 séries de 10 a 12 repetições.", gifUrl: "/gifs/imgi_21_costas-puxada-aberta-com-barra-no-pulley-1.gif" },
+          { name: "Remada baixa", details: "4 séries de 10 a 12 repetições.", gifUrl: "/gifs/imgi_23_remada-sentado-com-cabos-e-triangulo-para-costas.gif" },
+          { name: "Serrote com halter", details: "4 séries de 10 a 12 repetições.", gifUrl: "/gifs/imgi_11_costas-remada-unilateral-com-halter-serrote-no-banco.gif" },
           { name: "Rosca alternada com banco inclinado", details: "4 séries de 10 a 12 repetições." },
           { name: "Rosca Scott com barra W", details: "4 séries de 10 a 12 repetições." },
           { name: "Rosca direta na barra reta", details: "3 séries de 10 a 12 repetições." },
@@ -237,9 +238,9 @@ export const workoutPlans: WorkoutPlan[] = [
       d: {
         title: "Costas / posterior de ombros / trapézio",
         exercises: [
-          { name: "Remada curvada pronada", details: "3 séries de 8 a 10 repetições." },
-          { name: "Pulley nuca intercalado com pulley frente pegada aberta", details: "3 séries de 8 repetições." },
-          { name: "Remada baixa com triângulo", details: "3 séries de 6 a 10 repetições." },
+          { name: "Remada curvada pronada", details: "3 séries de 8 a 10 repetições.", gifUrl: "/gifs/imgi_10_costas-remada-curvada-com-pegada-invertida.gif" },
+          { name: "Pulley nuca intercalado com pulley frente pegada aberta", details: "3 séries de 8 repetições.", gifUrl: "/gifs/imgi_21_costas-puxada-aberta-com-barra-no-pulley-1.gif" },
+          { name: "Remada baixa com triângulo", details: "3 séries de 6 a 10 repetições.", gifUrl: "/gifs/imgi_23_remada-sentado-com-cabos-e-triangulo-para-costas.gif" },
           { name: "Remada baixa romana ou na corda", details: "3 séries com drop set." },
           { name: "Desenvolvimento militar posterior", details: "3 séries de 6 a 8 repetições." },
           { name: "Remada alta com barra", details: "3 séries de 8 a 10 repetições." },

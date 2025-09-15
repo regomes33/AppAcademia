@@ -59,6 +59,13 @@ const WorkoutDetail = () => {
                         <li key={index} className="border-l-2 border-primary pl-4">
                           <p className="font-semibold text-gray-800">{exercise.name}</p>
                           <p className="text-gray-600">{exercise.details}</p>
+                          {exercise.gifUrl && (
+                            <img
+                              src={exercise.gifUrl}
+                              alt={`Demonstração de ${exercise.name}`}
+                              className="mt-4 rounded-lg border bg-white"
+                            />
+                          )}
                         </li>
                       ))}
                     </ul>
