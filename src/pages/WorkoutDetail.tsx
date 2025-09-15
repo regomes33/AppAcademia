@@ -64,6 +64,7 @@ const WorkoutDetail = () => {
                               src={exercise.gifUrl}
                               alt={`Demonstração de ${exercise.name}`}
                               className="mt-4 rounded-lg border bg-white"
+                              loading="lazy"
                             />
                           )}
                         </li>
