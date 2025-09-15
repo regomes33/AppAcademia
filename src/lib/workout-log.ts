@@ -7,6 +7,7 @@ export interface WorkoutLog {
   exercise: Exercise;
   date: string;
   notes?: string;
+  difficulty?: string;
 }
 
 const LOGS_KEY = "workoutLogs";
