@@ -1,10 +1,9 @@
 import { workoutPlans } from "@/data/workouts";
 import WorkoutPlanCard from "@/components/WorkoutPlanCard";
-import { MadeWithDyad } from "@/components/made-with-dyad";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="bg-gray-50">
       <div className="container mx-auto p-4 sm:p-6 lg:p-8">
         <header className="text-center mb-8">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800">Selecione seu Plano de Treino</h1>
@@ -18,7 +17,6 @@ const Index = () => {
           ))}
         </main>
       </div>
-      <MadeWithDyad />
     </div>
   );
 };
