@@ -1,15 +1,22 @@
-// Update this page (the content is just a fallback if you fail to update the page)
-
+import { workoutPlans } from "@/data/workouts";
+import WorkoutPlanCard from "@/components/WorkoutPlanCard";
 import { MadeWithDyad } from "@/components/made-with-dyad";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">
-          Start building your amazing project here!
-        </p>
+    <div className="min-h-screen bg-gray-50">
+      <div className="container mx-auto p-4 sm:p-6 lg:p-8">
+        <header className="text-center mb-8">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800">Selecione seu Plano de Treino</h1>
+          <p className="text-lg text-gray-600 mt-2">
+            Escolha uma das divisões de treino ABCD abaixo para começar.
+          </p>
+        </header>
+        <main className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 justify-items-center">
+          {workoutPlans.map((plan) => (
+            <WorkoutPlanCard key={plan.id} plan={plan} />
+          ))}
+        </main>
       </div>
       <MadeWithDyad />
     </div>
